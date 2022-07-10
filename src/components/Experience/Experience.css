@@ -1,0 +1,44 @@
+.experienceparent{
+    min-width: 100%;
+    font-family: 'poppins';
+}
+.experienceadult{
+    min-height: max-content;
+    background-color: #333333;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4em;
+    overflow: hidden;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+.circle{
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+    border: 1em solid whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section>.circle:nth-of-type(1){
+    border-top-color: orangered;
+    border-right-color: orangered; 
+}
+.section>.circle:nth-of-type(2){
+    border-top-color: orangered;
+    border-right-color: orangered;
+    border-bottom-color: orangered; 
+}
+@media (max-width: 900px) {
+    .experienceadult{
+        flex-direction: column;
+        gap: 1.5em;
+    }
+}

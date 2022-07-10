@@ -1,0 +1,160 @@
+:root{
+    /* Colors */
+    --primary-color: whitesmoke;
+    --secondary-color: orangered;
+    --black-color: rgb(73, 73, 73);
+    /* Fonts */
+    --nice-fonts: "Roboto";
+}
+
+.introparent{
+    min-width: 100%;
+}
+.introadult{
+    background-color: whitesmoke;
+}
+.introchild{
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-family: 'montserrat';
+    padding: 0 4em;
+    flex-wrap: nowrap;
+}
+.r-intro{
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 15vmax;
+    gap: 1em;
+    overflow: hidden;
+}
+.r-intro>h1{
+    font-size: 3em;
+    font-weight: 900;
+}
+.r-intro>.introlist{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    font-family: "poppins";
+    font-size: 3em;
+    font-weight: 600;
+    overflow-y: hidden;
+}
+.r-intro>.introlist>ul{
+    list-style-type: none;
+    font-family: "poppins";
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+    top: 0.25em;
+    max-height: 1em;
+    line-height: 1.04em;
+    overflow: hidden;
+}
+.r-intro>.introlist>ul>li{
+    position: relative;
+    color: var(--secondary-color);
+    font-weight: 700;
+    top: 0;
+    animation: walk 20s 2s steps(4) infinite;
+}
+@keyframes walk {
+    to{
+        top: -460%;
+    }
+}
+.r-intro>.introlist>ul>li::after,
+.r-intro>.introlist>ul>li::before{
+    content: '';
+    position: absolute;
+    border-left: 0.14em solid var(--black-color);
+    background-color: var(--primary-color);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: move 5s 2s steps(24) infinite;
+}
+@keyframes move {
+    to{
+        left: 100%;
+        margin-left: 0.24em;
+    }
+}
+@media (max-width: 900px) {
+    .introchild{
+        flex-wrap: wrap;
+    }
+    .r-intro{
+        top: 10vmax;
+        gap: 1em; 
+    }
+    .r-intro>h1{
+        font-size: 2em;
+        font-weight: 900;
+    }
+    .r-intro>.introlist{
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+}
+
+/* Left Box Design*/
+.l-intro{
+    width: 100%;
+    max-height: 100vmax;
+}
+.l-introchild{
+    position: relative;
+    width: 100%;
+}
+.skills{
+    position: relative;
+    max-width: 10em;
+    top: 4em;
+    background-color: #333333;
+    padding: 1.5em;
+    font-weight: 600;
+    color: whitesmoke;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+    justify-content: center;
+    align-items: center;
+}
+.skills:nth-child(2){
+    position: relative;
+    top: 25em;
+    left: 22em;
+}
+.skills-image{
+    min-width: 100%;
+    position: relative;
+    top: -2em;
+}
+.skills-image>img{
+    max-width: 100%;
+    max-height: 100%;
+    transform: scale(1);
+}
+@media (max-width: 900px) {
+    .skills{
+        transform: scale(0.6);
+        top: 1em;
+        right: 3em;
+    }
+    .skills:nth-child(2){
+        position: relative;
+        top: 15em;
+        left: 8em;
+    }
+    .skills-image>img{
+        transform: scale(1.5);
+    }
+}

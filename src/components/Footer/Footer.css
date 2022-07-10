@@ -1,0 +1,32 @@
+.footerparent{
+    min-width: 100%;
+}
+.footeradult{
+    width: 100%;
+    color: whitesmoke;
+    position: relative;
+}
+.footeradult>img{
+    width: 100%;
+    height: 70vh;
+    background-color: transparent;
+    top: -30em;;
+}
+.footeradult>.social{
+    position: absolute;
+    top: 25em;
+    transform: scale(2.5);
+    left: 45%;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+@media (max-width: 900px) {
+    .footeradult>.social{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        top: 85%;
+        left: 35%;
+    }
+}

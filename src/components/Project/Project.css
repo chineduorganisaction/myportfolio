@@ -1,0 +1,92 @@
+.projectparent{
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: whitesmoke;
+}
+.projectadult{
+    min-width: 100%;
+    min-height: 100vh;
+}
+.projectchild{
+    width: 100%;
+    height: 100%;
+    color: #333333;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    font-family: 'montserrat';
+    padding: 4em;
+    gap: 5em;
+}
+.r-project{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    position: relative;
+}
+.r-project>h1{
+    font-size: 4em;
+    font-weight: 900;
+    margin-top: 2.5em;
+}
+
+
+/* Left Box */
+.l-project{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.l-projectchild{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    gap: 1em; 
+}
+.l-projectchild>.card{
+    width: max-content;
+    border: 5px solid #333333;
+    color: #333333;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    font-weight: 900;
+    font-size: 0.7em;
+    padding: 2em;
+    border-radius: 0.8em;
+}
+.card:nth-child(1){
+    position: relative;
+    top: 0;
+}
+.card:nth-child(2){
+    position: relative;
+    top: 0;
+    left: 30em;
+}
+.card:nth-child(3){
+    position: relative;
+    top: 0;
+    left: 10em;
+}
+@media (max-width: 900px) {
+    .projectchild{
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-size: 0.8em;
+        top: 0;
+    }
+    .r-project{
+        top: 0;
+    }
+    .l-projectchild{
+        left: 0;
+    }
+    .card:nth-child(2){
+        position: relative;
+        top: 0;
+        left: 5em;
+    }
+}
