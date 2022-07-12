@@ -1,5 +1,6 @@
 import React, { memo, useState } from 'react';
-import { Menu } from '@mui/icons-material'
+import { Menu } from '@mui/icons-material';
+import { Link } from 'react-scroll';
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -28,7 +29,9 @@ const Navbar = () => {
                     {
                         nav_List.map(
                             (value, index) => {
-                                return <li key={index}>{value}</li>
+                                return <li key={index}>
+                                        <Link to={value}>{value}</Link>
+                                    </li>
                             }
                         )
                     }
@@ -38,7 +41,9 @@ const Navbar = () => {
                     {
                         nav_List.map(
                             (value, index) => {
-                                return <li key={index}>{value}</li>
+                                return <li key={index}>
+                                        <Link to={value}>{value}</Link>
+                                        </li>
                             }
                         )
                     }

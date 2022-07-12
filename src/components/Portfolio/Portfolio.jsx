@@ -1,10 +1,14 @@
 import { memo } from "react";
 import React from 'react';
 import './Portfolio.css';
+import Reactjs from '../img/react-seeklogo.com.svg';
+import Nodejs from '../img/nodejs-seeklogo.com.svg';
+import Python from '../img/python-seeklogo.com.svg';
+import Mongodb from '../img/mongodb-seeklogo.com.svg';
 
 const Portfolio = () => {
   return (
-    <div className='portfolioparent'>
+    <div className='portfolioparent' id="Portfolio">
         <div className="portfolioadult">
             <div className="portfoliochild reveal">
                 <div className="r-portfolio">
@@ -17,16 +21,16 @@ const Portfolio = () => {
                 <div className="l-portfolio">
                     <div className="l-portfoliochild">
                         <div className="platform">
-                        Designer
+                            <img src={Nodejs} alt='' />
                         </div>
                         <div className="platform">
-                        Developer
+                            <img src={Mongodb} alt='' />
                         </div>
                         <div className="platform">
-                        Designer
+                            <img src={Reactjs} alt='' />
                         </div>
                         <div className="platform">
-                        Developer
+                            <img src={Python} alt='' />
                         </div>
                     </div>
                 </div>

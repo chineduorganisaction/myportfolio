@@ -3,7 +3,7 @@ import './Project.css';
 
 const Project = () => {
     return (
-        <div className='projectparent'>
+        <div className='projectparent' id='Project'>
             <div className="projectadult">
                 <div className="projectchild reveal">
                     <div className="r-project">

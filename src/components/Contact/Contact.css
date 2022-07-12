@@ -1,0 +1,78 @@
+.contactparent{
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: whitesmoke;
+}
+.contactadult{
+    min-width: 100%;
+    min-height: 100vh;
+}
+.contactchild{
+    width: 100%;
+    color: #333333;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    font-family: 'montserrat';
+    padding: 4em;
+    gap: 5em;
+}
+.r-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    position: relative;
+    top: 7em;
+}
+.r-contact>h1{
+    font-size: 4em;
+    font-weight: 900;
+}
+
+/* Left Box */
+.l-contact{
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 5em;
+    left: 2.5em;
+}
+.l-contactchild{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.l-contactchild>form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+    width: 100%;
+}
+.l-contactchild>form>input,textarea{
+    border-radius: 0.6em;
+    border: 2px solid #333333;
+    padding: 1em;
+    font-family: 'poppins';
+    background-color: whitesmoke;
+}
+input[type='submit']:hover{
+    background-color: #333333;
+    color: whitesmoke;
+}
+
+@media (max-width: 900px) {
+    .contactchild{
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-size: 0.8em;
+        top: 0;
+    }
+    .r-contact{
+        top: 0;
+    }
+    .l-contactchild{
+        left: 0em;
+    }    
+}

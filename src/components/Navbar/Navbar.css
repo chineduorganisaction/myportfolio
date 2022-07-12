@@ -20,6 +20,9 @@
     gap: 4em;
     flex-wrap: nowrap;
 }
+.nav-left>ul>li:hover{
+    color: orangered;
+}
 .menu{
     display: none;
 }
